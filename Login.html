@@ -1,0 +1,52 @@
+<?php
+
+session_start();
+if (isset($_SESSION["user"])) {
+    header("Location: Home.php");
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YETRADING | تسجيل الدخول</title>
+
+    <link rel="stylesheet" href="Css/L&S.css">
+
+    <!--رابط الخط-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Content-->
+
+<div id="form">
+
+    <h2 class="title">تسجيل الدخول</h2>
+
+    <div class="cover">
+    <form action="" name="form" method="post">
+        <label>اسم المستخدم:</label>
+        <input type="text" id="user" name="user" placeholder="ادخل البريد الالكتروني">
+
+        <label>كلمة المرور:</label>
+        <input type="password" id="pass" name="pass" placeholder="ادخل كلمة المرور">
+       
+        <input type="submit" id="btn" value="دخول" name="submit">
+    </form>
+
+    <p>ليس لدي حساب .. <a href="SignUp.php"><span class="text-login">انشاء حساب</span></a></p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
