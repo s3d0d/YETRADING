@@ -749,7 +749,7 @@ main{
 }
 
 .right .social_media .social_img{
-    width: 40px;
+    width: 35px;
 }
 
 .input-field{
@@ -1476,6 +1476,16 @@ main{
     position: absolute;
     bottom: -5px;
     right: 15px;
+}
+
+/*top*/
+
+.top{
+    margin: 35px 15px 20px 15px;
+}
+
+.top .social_media{
+    margin: 30px 10px 20px;
 }
 
 /*navbar*/

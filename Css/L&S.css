@@ -1,3 +1,13 @@
+:root{
+    --main-color:#000969;
+    --second-color:#3fa4fd;
+    --black:#222;
+    --white:#fff;
+    --light-bg:#f3f3f3;
+    --border:2px solid black;
+    --box-shadow:0 0px 50px 10px rgb(0,0,0,.3);
+}
+
 *{
     font-family: 'Cairo', sans-serif;
     direction: rtl;
@@ -10,28 +20,51 @@
 }
 
 body{
-    padding: 50px;
+    background-color: var(--main-color);
 }
 
-/*SignUp*/
+/*Login*/
 
-.Container{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px;
-    box-shadow: rgb(100, 100, 111, 0.2) 0px 10px 30px 0px;
+.title{
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 150px;
+    padding: 5px 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
-.form-group{
-    margin-bottom: 30px;
+#form{
+    margin: 120px auto;
+    width: 400px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgb(0, 3, 72);
+    padding: 20px 0;
 }
 
-.btn-primary{
-    float: right;
+.cover{
+    margin-top: 20px;
+    padding:0 30px;
 }
 
-p {
+#user, #pass{
+    border: 1px solid black;
+    padding:5px 10px;
+    margin-top: 10px;
+    width: 93%;
+    margin-bottom: 15px;
+}
+
+#btn{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 5px 25px;
     font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .text-login{
@@ -39,4 +72,61 @@ p {
     font-size: 18px;
 }
 
+@media screen and (min-width:320px) and (max-width:480px){
+
+    body{
+        background-color: var(--white);
+        padding: 50px 0;
+    }
+
+    .title{
+        background-color: var(--main-color);
+        color: var(--white);
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    #form{
+        margin:0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow:none;
+        padding: 20px 0;
+    }
+    
+    .cover{
+        margin-top: 20px;
+        padding:0 30px;
+    }
+    
+    #user, #pass{
+        border: 1px solid black;
+        padding:5px 10px;
+        margin-top: 10px;
+        width: 93%;
+        margin-bottom: 15px;
+    }
+    
+    #btn{
+        background-color: var(--main-color);
+        color: var(--white);
+        padding: 5px 25px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    .text-login{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+}
 
